@@ -1,14 +1,14 @@
-# Comparação entre Sistemas
+# Comparação entre os Sistemas
 
-Abaixo, o quadro comparativo entre o sistema de produção analisado (Tropykaly) e o sistema didático visto anteriormente:
+Aqui está um comparativo direto entre o sistema em produção que analisei (Tropykaly) e o projeto didático que vimos antes:
 
-| Critério | Sistema Real (Tropykaly) | Sistema Didático |
+| Critério | Tropykaly (Sistema Real) | Sistema Didático |
 | :--- | :--- | :--- |
-| **Arquitetura** | Cliente-Servidor (desacoplada) | Monolítica / Simples |
-| **Coesão** | Alta (módulos focados em seu domínio) | Baixa (lógica misturada) |
-| **Acoplamento** | Moderado (comunicação via Controllers/APIs) | Alto (regras na interface) |
-| **Organização** | Boa e padronizada | Confusa |
-| **Flexibilidade**| Alta (fácil inserção de novos itens) | Baixa (engessado) |
+| **Arquitetura** | Cliente-Servidor (bem separada) | Monolítica / Mais simples |
+| **Coesão** | Alta (módulos focados no próprio domínio) | Baixa (lógica misturada) |
+| **Acoplamento** | Moderado (comunicação limpa via APIs/Controllers) | Alto (regras jogadas direto na interface) |
+| **Organização** | Padronizada | Confusa |
+| **Flexibilidade**| Alta (fácil adicionar novidades) | Baixa (código engessado) |
 
-## Principais Diferenças
-A principal distinção reside na **separação de responsabilidades**. O sistema real demonstra flexibilidade para escalar: a adição de uma nova categoria de lanche não parece quebrar o layout, sugerindo que os dados (Model) estão bem isolados da apresentação (View). Por outro lado, o sistema didático apresentava alto acoplamento, onde qualquer alteração na interface corria o risco de afetar as regras de negócio do pedido.
+## Onde está a maior diferença?
+A principal diferença é, sem dúvida, a **separação de responsabilidades**. O sistema real mostra que aguenta escalar: se o restaurante adicionar uma categoria nova de lanches amanhã, isso não vai quebrar o layout. Isso prova que os dados (Model) estão bem isolados da tela (View). Já o sistema didático era super acoplado, onde qualquer mexidinha no visual corria o risco de bugar a regra de negócio e quebrar o fechamento do pedido.

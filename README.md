@@ -6,26 +6,24 @@
 **Professor:** Dr. Renato William Rodrigues de Souza  
 **Instituição:** IFCE Campus Boa Viagem  
 
-## Descrição do Projeto
+## Sobre o Projeto
 
-Este repositório contém a atividade avaliativa de Engenharia Reversa, Arquitetura e Modelagem. O objetivo central é analisar um sistema real em produção, inferindo sua estrutura interna, padrões de projeto e escolhas arquiteturais através do seu comportamento.
+Este repositório guarda a atividade avaliativa de Engenharia Reversa, Arquitetura e Modelagem. A ideia central aqui foi pegar um sistema real em produção — no caso, a plataforma de delivery da **Tropykaly Pizzas e Lanches** — e tentar deduzir como ele funciona por baixo dos panos, inferindo sua estrutura, arquitetura e padrões de projeto com base no comportamento da aplicação.
 
-O sistema escolhido para análise foi a plataforma de pedidos online da **Tropykaly Pizzas e Lanches**.
+## Estrutura dos Arquivos
 
-## Estrutura do Repositório
+Organizei a entrega da seguinte forma:
 
-Os arquivos da entrega estão organizados da seguinte forma:
+* **analise.md**: Uma visão geral do sistema, o que ele faz e como imagino que as camadas estejam divididas.
+* **comparacao.md**: Um paralelo direto entre o sistema real (Tropykaly) e o projeto didático que vimos em aula.
+* **arquitetura.md**: Minha proposta de arquitetura usando MVC e alguns padrões de projeto para escalabilidade.
+* **melhorias.md**: Relatório do que percebi de gargalos e as minhas sugestões para evoluir o código.
+* **modelagem.png**: Diagrama de Classes UML mostrando as principais entidades, atributos e relações.
 
-* **analise.md**: Contém a análise detalhada do sistema real, incluindo objetivos, funcionalidades e divisão em camadas.
-* **comparacao.md**: Quadro comparativo entre o sistema real (Tropykaly) e o sistema didático analisado anteriormente.
-* **arquitetura.md**: Proposta de melhoria arquitetural utilizando o padrão MVC e componentes principais.
-* **melhorias.md**: Relatório de problemas identificados (acoplamento, manutenção) e sugestões de evolução.
-* **modelagem.png**: Diagrama de Classes UML com a identificação de entidades, atributos, métodos e multiplicidade.
+## Como esse trabalho foi feito
 
-## Metodologia de Entrega
-
-A atividade foi desenvolvida simulando um ambiente profissional, utilizando:
-* **Git/GitHub:** Para controle de versão e submissão.
-* **Branches:** Trabalho isolado em branch específica para organização.
-* **Conventional Commits:** Histórico de alterações padronizado e semântico.
-* **Pull Request:** Fluxo formal de revisão e entrega.
+Tentei chegar o mais perto possível de um fluxo de trabalho profissional. Para isso, utilizei:
+* **Git/GitHub:** Para controle de versão de tudo.
+* **Branches:** Para manter o desenvolvimento de cada etapa separado e organizado.
+* **Conventional Commits:** Para manter o histórico semântico e fácil de ler.
+* **Pull Requests:** Simulando um processo real de revisão e entrega de código.

@@ -1,11 +1,12 @@
-# Proposta de Arquitetura e Padrões de Projeto
+# Arquitetura e Padrões de Projeto
 
 ## Organização em MVC
-Para garantir manutenibilidade e escalabilidade, a aplicação deve seguir o padrão arquitetural MVC:
-- **Model:** Classes que representam o domínio, como `Produto`, `Pedido` e `ItemPedido`, responsáveis pelas regras de negócio e validações de estado.
-- **View:** Componentes de interface Web consumindo os dados.
-- **Controller:** Orquestradores como `PedidoController` e `ProdutoController`, que interceptam as requisições HTTP, consultam os Models e devolvem a resposta para a View.
+Para o código não virar uma bagunça conforme o sistema cresce, a base da aplicação precisa seguir firme com o padrão MVC:
+- **Model:** As classes que realmente importam para o negócio, como `Produto`, `Pedido` e `ItemPedido`. É aqui que moram as regras e validações de estado.
+- **View:** A interface web, focada apenas em renderizar os dados para o cliente.
+- **Controller:** Os maestros do sistema (como `PedidoController` e `ProdutoController`). Eles pegam o que o usuário clicou na tela, conversam com o Model e devolvem a resposta certinha pra View.
 
-## Aplicação de Padrões de Projeto (Design Patterns)
-1. **Factory Method:** Pode ser aplicado na criação de produtos complexos. Uma `ProdutoFactory` centralizaria a lógica de instanciar diferentes tipos de itens (ex: instanciar uma Pizza Meio a Meio exige regras diferentes de instanciar uma Bebida).
-2. **Singleton:** Ideal para gerenciar recursos únicos e globais do escopo da requisição, como a conexão com o banco de dados ou o gerenciamento de estado do Carrinho de Compras ativo na sessão do usuário.
+## Design Patterns Recomendados
+Além do MVC, alguns padrões de projeto fariam muita diferença na organização do código:
+1. **Factory Method:** Perfeito para lidar com a criação de produtos que têm muitas variações. Uma `ProdutoFactory` centraliza a lógica, porque instanciar uma pizza com duas metades e borda recheada exige regras muito diferentes de simplesmente instanciar uma lata de refrigerante.
+2. **Singleton:** Essencial para cuidar de recursos globais que precisam ser únicos durante a requisição, como a própria conexão com o banco de dados ou o gerenciamento do Carrinho de Compras ativo na sessão do cliente.
